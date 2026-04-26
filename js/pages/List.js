@@ -100,28 +100,28 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        You must have a cheat indicator with a cps counter on at all times (if you submit a record without any off those you have to rebeat the lvl with them on if you have vanilla gd you can skip this)
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                        Please check the level ID before you submit a record
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                        To upload a record you must send a raw footage link with click/taps (you dont need to have clicks if the level is rated hard demon/below in the official Nll discord)
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        The recording must have last 5-15 seconds of your last attempt with the death
                     </p>
                     <p>
                         The recording must also show the player hit the endwall, or the completion will be invalidated.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        You can only use a secret way/route if it doesnt skip the whole lvl/makes it easier
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        Before using any custom ldm copy or startpos please check if the lvl is the same if you beat it on a easier copy the run is invalid
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        When submiting a run please also submit a id of the copy you beaten it on so we can verify if the run is valid
                     </p>
                 </div>
             </div>
