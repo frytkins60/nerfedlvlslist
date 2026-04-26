@@ -4,38 +4,43 @@
 const scale = 3;
 
 /**
- * Calculate the score awarded when having a certain percentage on a list level
- * @param {Number} rank Position on the list
- * @param {Number} percent Percentage of completion
- * @param {Number} minPercent Minimum percentage required
- * @returns {Number}
+ *
+ *
+ * Rules:
+ * #1 = 150 pts
+ * #2–10 = 100 pts
+ * #11–50 = 50 pts
+ * #51+ = 30 pts
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 150) {
-        return 0;
-    }
-    if (rank > 75 && percent < 100) {
-        return 0;
-    }
+    // optional cutoff rules (keep or remove if you want)
+    if (rank > 150) return 0;
+    if (rank > 75 && percent < 100) return 0;
 
-    // Old formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // New formula
-    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+    let score = 0;
 
-    score = Math.max(0, score);
-
-    if (percent != 100) {
-        return round(score - score / 3);
+    // tier system
+    if (rank === 1) {
+        score = 150;
+    } else if (rank <= 10) {
+        score = 100;
+    } else if (rank <= 50) {
+        score = 50;
+    } else {
+        score = 30;
     }
 
-    return Math.max(round(score), 0);
+
+    if (percent < 100) {
+        score *= 0.3; // heavy penalty for incomplete runs
+    }
+
+    return round(Math.max(score, 0));
 }
 
+/**
+ * Rounds numbers to fixed precision
+ */
 export function round(num) {
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
