@@ -1,18 +1,18 @@
 {
-    "id": 57436521,
-    "name": "SampleLevel1",
-    "author": "LevelUploader",
-    "creators": ["Creator1", "Creator2", "Creator3"],
-    "verifier": "Verifier",
-    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
-    "percentToQualify": 56,
-    "password": "Not Copyable",
+    "id": 94555142,
+    "name": "Tidal wave easy",
+    "author": "AciiGD",
+    "creators": ["AciiGD"],
+    "verifier": "Frytkins",
+    "verification": "https://youtu.be/G78BWuT7_D0",
+    "percentToQualify": 55,
+    "password": "Free Copy",
     "records": [
         {
-            "user": "Sample_Victor_1",
-            "link": "https://www.youtube.com/watch?v=MgJeijBGKHU",
+            "user": "Frytkins",
+            "link": "https://youtu.be/G78BWuT7_D0",
             "percent": 100,
-            "hz": 360
+            "hz": 165
         }
     ]
 }
